@@ -8,6 +8,6 @@ Standalone static digital business card for Ioannis Tsioukis.
 - `Static/assets/ioannis-tsioukis.vcf`: downloadable contact card
 - `Static/assets/Tsioukis.png`: QR code image
 
-## Usage
+## Digital Business Card
 
-Open `info.html` in a browser.
+[Open Digital Business Card](https://pydevian.github.io/business-card/)

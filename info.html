@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tsioukis Ioannis VCard</title>
+    <meta
+      name="description"
+      content="Digital business card for Ioannis Tsioukis, AI Department Manager at ARI Foods and AI/ML Full-Stack Engineering Lead."
+    />
+    <link rel="icon" type="image/x-icon" href="Static/favicon.png" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <style>
+      :root {
+        --bg: #0e131f;
+        --panel: rgba(10, 16, 28, 0.9);
+        --panel-border: rgba(255, 255, 255, 0.08);
+        --text: #f5f7fb;
+        --muted: #b7c3d6;
+        --soft: #91a1b8;
+        --accent-start: #0f766e;
+        --accent-end: #2563eb;
+        --button-bg: rgba(255, 255, 255, 0.05);
+        --button-hover: rgba(255, 255, 255, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        color: var(--text);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(37, 99, 235, 0.28),
+            transparent 30%
+          ),
+          radial-gradient(
+            circle at bottom right,
+            rgba(15, 118, 110, 0.24),
+            transparent 28%
+          ),
+          linear-gradient(160deg, #06090f 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: 100%;
+        max-width: 560px;
+      }
+
+      .card {
+        padding: 1.75rem;
+        border: 1px solid var(--panel-border);
+        border-radius: 28px;
+        background: var(--panel);
+        box-shadow: 0 24px 56px rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(16px);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        padding: 0.45rem 0.9rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.06);
+        color: #d7e2f3;
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 1.2rem 0 0.4rem;
+        font-size: clamp(2rem, 6vw, 2.7rem);
+        line-height: 1.05;
+      }
+
+      .role {
+        margin: 0;
+        color: #dbe7ff;
+        font-size: 1.06rem;
+        font-weight: 600;
+      }
+
+      .focus {
+        margin: 0.5rem 0 1rem;
+        color: var(--soft);
+        font-size: 0.96rem;
+      }
+
+      .intro {
+        margin: 0 0 1.5rem;
+        color: #d3dbea;
+        line-height: 1.65;
+      }
+
+      .meta {
+        display: grid;
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+        color: var(--muted);
+      }
+
+      .meta a,
+      .meta span {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .meta a:hover,
+      .meta a:focus,
+      .actions a:hover,
+      .actions a:focus {
+        color: #ffffff;
+      }
+
+      .actions {
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .actions a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        min-height: 52px;
+        padding: 0.9rem 1rem;
+        border: 1px solid var(--panel-border);
+        border-radius: 16px;
+        background: var(--button-bg);
+        color: var(--text);
+        font-weight: 600;
+        text-decoration: none;
+        transition:
+          transform 0.18s ease,
+          background-color 0.18s ease,
+          border-color 0.18s ease;
+      }
+
+      .actions a:hover,
+      .actions a:focus {
+        transform: translateY(-1px);
+        background: var(--button-hover);
+        border-color: rgba(148, 163, 184, 0.35);
+      }
+
+      .actions .primary {
+        border-color: transparent;
+        background: linear-gradient(
+          135deg,
+          var(--accent-start),
+          var(--accent-end)
+        );
+      }
+
+      .qr {
+        margin-top: 1.5rem;
+        text-align: center;
+      }
+
+      .qr img {
+        width: min(190px, 100%);
+        height: auto;
+        padding: 0.6rem;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+      }
+
+      .qr p {
+        margin: 0.8rem 0 0;
+        color: var(--soft);
+        font-size: 0.9rem;
+      }
+
+      @media (min-width: 600px) {
+        .card {
+          padding: 2rem;
+        }
+
+        .actions {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="card" aria-labelledby="digital-card-title">
+        <p class="eyebrow">
+          <i class="fa fa-address-card-o" aria-hidden="true"></i>
+          <span>Digital Business Card</span>
+        </p>
+
+        <h1 id="digital-card-title">Tsioukis Ioannis</h1>
+        <p class="role">AI Department Manager at ARI Foods</p>
+        <p class="role">AI/ML Full-Stack Engineering Lead</p>
+        <p class="focus">AI Systems • Automation • Full-Stack Engineering</p>
+
+        <p class="intro">
+          I build practical AI systems, production-ready automation, and
+          reliable software that solve real business problems without
+          unnecessary complexity.
+        </p>
+
+        <div class="meta" aria-label="Professional details">
+          <span>
+            <i class="fa fa-building-o" aria-hidden="true"></i>
+            <span>ARI Foods</span>
+          </span>
+          <a
+            href="mailto:ai.research1@arifoods.gr"
+            aria-label="Send email to Ioannis Tsioukis"
+          >
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <span>ai.research1@arifoods.gr</span>
+          </a>
+        </div>
+
+        <div class="actions" aria-label="Business card actions">
+          <a
+            class="primary"
+            href="Static/assets/ioannis-tsioukis.vcf"
+            download="ioannis-tsioukis.vcf"
+            aria-label="Save Ioannis Tsioukis contact as a vCard file"
+          >
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <span>Save Contact</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ioannis-tsioukis/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Connect with Ioannis Tsioukis on LinkedIn"
+          >
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="mailto:ai.research1@arifoods.gr"
+            aria-label="Email Ioannis Tsioukis"
+          >
+            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+            <span>Email</span>
+          </a>
+          <a
+            href="https://github.com/PyDevIan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Ioannis Tsioukis on GitHub"
+          >
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+
+        <div class="qr" aria-label="QR code for contact card">
+          <img
+            src="Static/assets/Tsioukis.png"
+            alt="QR code for saving Ioannis Tsioukis contact card"
+          />
+          <p>Scan to open the card or save the contact directly.</p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
